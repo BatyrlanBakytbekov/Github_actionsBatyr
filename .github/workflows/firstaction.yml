@@ -9,5 +9,8 @@ jobs:
       run: echo "Hello, ${{ vars.MY_NAME }}"
     - name: Print "Congratulations"
       run: echo "From Accenture"
-    - name: Surname
-      run: echo "Surname - ${{ secrets.MY_SURNAME }}"
+  surname:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Surname
+        run: echo "Surname = ${{ secrets.MY_SURNAME }}"
