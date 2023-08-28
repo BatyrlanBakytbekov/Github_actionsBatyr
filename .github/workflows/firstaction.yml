@@ -10,6 +10,7 @@ jobs:
     - name: Print "Congratulations"
       run: echo "From Accenture"
   surname:
+    needs: hello
     runs-on: ubuntu-latest
     steps:
       - name: Surname
